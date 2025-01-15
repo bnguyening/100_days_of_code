@@ -7,3 +7,20 @@ states_of_america = ["Delaware", "Pennsylvania", "New Jersey", "Georgia", "Conne
                      "New Mexico", "Arizona", "Alaska", "Hawaii"]
 
 print(states_of_america)
+
+num_of_states = len(states_of_america) # 50 -> 49
+
+print(states_of_america[num_of_states - 1])
+
+# fruits = ["Cherry", "Apple", "Pear"]
+# veg = ["Cucumber", "Kale", "Spinnach"]
+# fruits_and_veg = [fruits, veg]
+# print(fruits_and_veg)
+# fruits = ["Strawberries", "Nectarines", "Apples", "Grapes", "Peaches", "Cherries", "Pears"]
+# print(fruits[-5])
+fruits = ["Strawberries", "Nectarines", "Apples", "Grapes", "Peaches", "Cherries", "Pears"]
+vegetables = ["Spinach", "Kale", "Tomatoes", "Celery", "Potatoes"]
+
+dirty_dozen = [fruits, vegetables]
+
+print(dirty_dozen[0] [1])

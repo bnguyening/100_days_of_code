@@ -22,3 +22,21 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 ''')
 print("Welcome to Treasure Island.")
 print("Your mission is to find the treasure.")
+road_decision = input("You come to a cross roads do you take the left or right trail?")
+if road_decision == "right" or road_decision == "Right":
+    lake_decision = input("The trail comes to a lake. Do you swim across or wait?")
+    if lake_decision == "Wait" or lake_decision == "wait":
+            print("You wait and the ferry appears. You get dropped off onto a building with three doors")
+            door_decision = input("You see a red, yellow, and blue door. Which do you choose to go through?")
+            if door_decision == "red" or door_decision == "Red":
+                print("You enter a room of fire and get burnt to a crisp. Please try again")
+            elif door_decision == "yellow" or door_decision == "Yellow":
+                print("You made it to the treasure. You won!")
+            elif door_decision == "blue" or door_decision == "Blue":
+                print("You get eaten by tigers. Please try again")
+            else:
+                print("You failed to choose a door. Someone beat you to the treasure. Please try again")
+    else:
+            print("You get attacked by rainbow trout and die. Please try again")
+else:
+    print("You fall into a pit and die. Please try again")
