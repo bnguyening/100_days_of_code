@@ -16,7 +16,9 @@ operations = {"+": add,
              }
 output = ""
 def calculations_continued(total):
-    print("+\n" + "- \n" + "* \n" + "/")
+    # print("+\n" + "- \n" + "* \n" + "/") commented this out because below is better
+    for symbol in operations:
+        print(symbol)
     calc_1 = total
     operator = input("Pick one of the operations above.\n")
     calc_2 = float(input("What's the second number \n"))
@@ -26,6 +28,9 @@ def calculations_continued(total):
     if continue_calc == "yes":
         calculator == False
         calculations_continued(output)
+    else:
+        print("\n" * 20)
+        print(art.logo)
 
 # # multiply 4 * 8 using the dictionary
 # addition = operations["+"](4,8)
@@ -34,7 +39,9 @@ def calculations_continued(total):
 
 while calculator == True:
     calc_1 = float(input("Whats the first number?\n"))
-    print("+\n" + "- \n" + "* \n" + "/")
+    # print("+\n" + "- \n" + "* \n" + "/") commented this out because below is better
+    for symbol in operations:
+        print(symbol)
     operator = input("Pick one of the operations above.\n")
     calc_2 = float(input("What's the second number \n"))
     output = operations[operator](calc_1, calc_2)
@@ -43,3 +50,6 @@ while calculator == True:
     if continue_calc == "yes":
         calculator == False
         calculations_continued(output)
+    else:
+        print("\n" * 20)
+        print(art.logo)
